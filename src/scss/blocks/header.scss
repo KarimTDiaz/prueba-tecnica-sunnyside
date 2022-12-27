@@ -3,7 +3,7 @@
 
 .header{
     height: 80vh;
-    background-image: url(../../../dist/assets/images/mobile/image-header.jpg);
+    background-image: url(../../../docs/assets/images/mobile/image-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -18,7 +18,7 @@
         margin-right: auto;
     }
     @include responsive(laptop){
-        background-image: url(../../../dist/assets/images/desktop/image-header.jpg);
+        background-image: url(../../../docs/assets/images/desktop/image-header.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         }

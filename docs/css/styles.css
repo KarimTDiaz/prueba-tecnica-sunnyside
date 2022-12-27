@@ -435,12 +435,12 @@ body {
   text-align: center;
 }
 .section-with-background--cherries {
-  background-image: url(../../../dist/assets/images/mobile/image-graphic-design.jpg);
+  background-image: url(../../../docs/assets/images/mobile/image-graphic-design.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .section-with-background--orange {
-  background-image: url(../../../dist/assets/images/mobile/image-photography.jpg);
+  background-image: url(../../../docs/assets/images/mobile/image-photography.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -450,10 +450,10 @@ body {
     padding: 23rem 8rem 0;
   }
   .section-with-background--cherries {
-    background-image: url(../../../dist/assets/images/desktop/image-graphic-design.jpg);
+    background-image: url(../../../docs/assets/images/desktop/image-graphic-design.jpg);
   }
   .section-with-background--orange {
-    background-image: url(../../../dist/assets/images/desktop/image-photography.jpg);
+    background-image: url(../../../docs/assets/images/desktop/image-photography.jpg);
   }
 }
 
@@ -578,7 +578,7 @@ body {
 
 .header {
   height: 80vh;
-  background-image: url(../../../dist/assets/images/mobile/image-header.jpg);
+  background-image: url(../../../docs/assets/images/mobile/image-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -598,7 +598,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .header {
-    background-image: url(../../../dist/assets/images/desktop/image-header.jpg);
+    background-image: url(../../../docs/assets/images/desktop/image-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
