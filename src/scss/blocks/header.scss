@@ -1,1 +1,32 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/responsive.scss' as*;
+
+.header{
+    height: 80vh;
+    background-image: url(../../../dist/assets/images/mobile/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    &__top{
+        @include flexbox(flex,row,nowrap,space-between,center);
+        position: relative;
+        top: 20px;
+        width: 80%;
+        margin-bottom: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include responsive(laptop){
+        background-image: url(../../../dist/assets/images/desktop/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+        &__top{
+            top: 20px;
+            width: 90%;
+            margin-bottom: 10rem;
+        }
+    }
+
 

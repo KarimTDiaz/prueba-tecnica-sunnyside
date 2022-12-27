@@ -1,0 +1,35 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/responsive.scss' as*;
+
+.article-with-backgrounds{
+    @include responsive(laptop){
+    @include flexbox(flex,row,nowrap,center,center);
+    }
+
+}
+
+.section-with-background{
+    height: 600px;
+    padding: 23rem 1rem 0rem;
+    text-align: center;
+    &--cherries{
+        background-image: url(../../../dist/assets/images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &--orange{
+        background-image: url(../../../dist/assets/images/mobile/image-photography.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include responsive(laptop){
+        width: 50%;
+        padding: 23rem 8rem 0;
+        &--cherries{
+        background-image: url(../../../dist/assets/images/desktop/image-graphic-design.jpg);
+        }
+        &--orange{
+        background-image: url(../../../dist/assets/images/desktop/image-photography.jpg);
+        }
+    }
+}

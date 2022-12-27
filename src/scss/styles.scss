@@ -3,6 +3,10 @@
 @use 'config/variables.scss';
 @use 'config/variables-fonts';
 @use 'blocks/body.scss';
+@use 'blocks/article-with-images.scss';
+@use 'blocks/article-with-backgrounds.scss';
+@use 'blocks/testimonials.scss';
+@use 'blocks/gallery.scss';
 @use 'blocks/titles.scss';
 @use 'blocks/texts.scss';
 @use 'blocks/buttons.scss';

@@ -1,1 +1,10 @@
+@use '../mixins/responsive.scss' as*;
 
+.text{
+    font-family: var(--secondary-font);
+    line-height: 2rem;
+    color: var(--text-article-color);
+    &--dark{
+        color: var(--title-text-color);
+    }
+}

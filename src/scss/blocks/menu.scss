@@ -1,0 +1,48 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/hover.scss' as*;
+@use '../mixins/responsive.scss' as*;
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 2.5%;
+    width: 95%;
+    padding-top: 2.5rem;
+    background-color: var(--white);
+    transform:translateX(120%);
+    transition: transform 0.4s;
+    &--show{
+        transform: translateX(0);
+    }
+
+    &__item{
+        margin-bottom: 2.5rem;
+    }
+    &__link{
+        font-family: var(--secondary-font);
+        color:var(--grayish-blue);
+        &--contact{
+            font-family: var(--primary-font);
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            background-color: var(--yellow);
+            color: var(--title-text-color);
+        }
+    }
+    @include responsive(laptop){
+        position: static;
+        @include flexbox(flex,row,nowrap,space-between,center);
+        width: 25rem;
+        padding-top: 2.5rem;
+        background-color: transparent;
+        transform: translateX(0);
+        &__link{
+            color: var(--white);
+            &--contact{
+                background-color: var(--white);
+                color: var(--title-text-color);
+            }
+        }
+    }
+}

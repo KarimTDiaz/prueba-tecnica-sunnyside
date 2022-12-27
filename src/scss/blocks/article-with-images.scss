@@ -1,0 +1,24 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/responsive.scss' as*;
+
+.section-with-image{
+
+    &__data{
+        @include flexbox(flex,column,nowrap,space-evenly,center);
+        height: 450px;
+        padding:  2rem;
+        text-align: center;
+    }
+    @include responsive(laptop){
+        @include flexbox(flex,row,nowrap,center,center);
+        &__data{
+            align-items: baseline;
+            padding: 8rem;
+            width: 50%;
+            text-align: left;
+        }
+        &--reverse{
+            flex-direction: row-reverse;
+        }
+    }
+}

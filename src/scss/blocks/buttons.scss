@@ -1,1 +1,25 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/responsive.scss' as*;
+@use '../mixins/hover.scss' as*;
+@use '../mixins/pseudo.scss' as*;
+
+.button-underline{
+    position: relative;
+    font-family: var(--primary-font);
+    color: var(--title-text-color);
+    &--yellow::after,
+    &--red::after{
+        @include pseudo(140px,10px){
+            left: -15px;
+            bottom: 0;
+            z-index: -1;
+            border-radius: 5rem;
+            background-color: var(--soft-yellow);
+        };
+    }
+    &--red::after{
+        background-color: var(--soft-red);
+    }
+    };
+
 

@@ -1,0 +1,15 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/responsive.scss' as*;
+
+.icon{
+    &-arrow{
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.hamburger{
+    @include responsive(laptop){
+        display: none;
+    }
+}

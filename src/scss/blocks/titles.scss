@@ -1,1 +1,33 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/responsive.scss' as*;
+
+.title{
+    font-family: var(--primary-font);
+    font-size: var(--title-l);
+    letter-spacing: 0.3rem;
+    color: var(--white);
+    &--small{
+        font-size: var(--title-m);
+        color: var(--title-text-color);
+        letter-spacing: 0;
+    }
+    &--smaller{
+        font-size: var(--title-s);
+        letter-spacing: 0rem;
+        color: var(--title-text-color);
+    }
+
+    @include responsive(laptop){
+        font-size: var(--title-xl);
+        letter-spacing: 0.5rem;
+        &--small{
+            letter-spacing: 0;
+        }
+        &--smaller{
+            font-size: var(--title-s);
+            letter-spacing: 0;
+        }
+    }
+    
+}
 
