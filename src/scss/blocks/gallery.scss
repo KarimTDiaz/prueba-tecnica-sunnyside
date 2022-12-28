@@ -1,0 +1,10 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/responsive.scss' as*;
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+    @include responsive(laptop){
+        grid-template-columns: repeat(auto-fill,25%);
+    }
+}

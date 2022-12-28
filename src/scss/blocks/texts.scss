@@ -7,4 +7,9 @@
     &--dark{
         color: var(--title-text-color);
     }
+    &--grayer{
+        color: var(--grayish-blue);
+        line-height: 0;
+
+    }
 }

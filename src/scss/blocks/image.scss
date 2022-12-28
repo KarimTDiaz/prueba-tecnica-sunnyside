@@ -1,0 +1,10 @@
+@use '../mixins/responsive.scss' as*;
+
+.image{
+    &--testimonials{
+        width: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+    }
+}

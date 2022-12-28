@@ -1,0 +1,23 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/responsive.scss' as*;
+@use '../mixins/hover.scss' as*;
+
+.testimonials{
+    @include flexbox(flex,column,nowrap,center,center);
+    padding: 3em 2.5em;
+    text-align: center;
+    &__item{
+        padding-top: 4em;
+    }
+    @include responsive(laptop){
+        padding: 7em 3em;
+
+        &__item{
+            padding: 3rem 3rem;
+        }
+        &__list{
+            @include flexbox(flex,row,nowrap,center,center);
+        }
+        
+    }
+}

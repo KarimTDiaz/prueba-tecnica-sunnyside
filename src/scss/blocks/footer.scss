@@ -1,1 +1,25 @@
-/* ESTILOS DEL FOOTER */
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/responsive.scss' as*;
+@use '../mixins/hover.scss' as*;
+
+.footer{
+    @include flexbox(flex,column,nowrap,space-between,center);
+    gap: 5em;
+    padding: 5em 0;
+    background-color: var(--softer-green);
+    &-list{
+        @include flexbox(flex,row,nowrap,space-between,center);
+        gap: 2em;
+        &__link{
+            font-size: var(--text-s);
+            font-family: var(--secondary-font);
+            color: var(--soft-green);
+            transition: color 0.5s;
+            @include hover{
+                &:hover{
+                    color: var(--title-text-color);
+                }
+            }
+        }
+    }
+}

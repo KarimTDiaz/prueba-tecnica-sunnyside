@@ -16,6 +16,16 @@
         letter-spacing: 0rem;
         color: var(--title-text-color);
     }
+    &--extra-small{
+        font-size: var(--title-xs);
+        letter-spacing: 0;
+        line-height: 2em;
+        color: var(--title-text-color);
+    }
+    &--testimonials{
+        font-size: var(--title-xs);
+        color:var(--grayish-blue);
+    }
 
     @include responsive(laptop){
         font-size: var(--title-xl);
@@ -26,6 +36,16 @@
         &--smaller{
             font-size: var(--title-s);
             letter-spacing: 0;
+        }
+        &--extra-small{
+            font-size: var(--title-xs);
+            letter-spacing: 0;
+            line-height: 2em;
+            color: var(--title-text-color);
+        }
+        &--testimonials{
+            font-size: var(--title-xs);
+            color:var(--grayish-blue);
         }
     }
     

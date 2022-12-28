@@ -28,6 +28,14 @@
             border-radius: 2rem;
             background-color: var(--yellow);
             color: var(--title-text-color);
+            transition:transform 1s, background-color 1s, color 0.5s;
+            @include hover{
+                &:hover{
+                    background-color: transparent;
+                    transform:scale(1.2);
+                    color: var(--white);
+                }
+            }
         }
     }
     @include responsive(laptop){

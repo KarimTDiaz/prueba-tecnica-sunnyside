@@ -1,0 +1,18 @@
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/hover.scss' as*;
+@use '../mixins/responsive.scss' as*;
+
+.socials{
+    @include flexbox(flex,row,nowrap,space-between,center);
+        gap: 2em;
+        &__icon{
+            font-size: var(--title-s);
+            color: var(--soft-green);
+            transition: color 0.5s;
+            @include hover{
+                &:hover{
+                    color: var(--title-text-color);
+                }
+            }
+        }
+}
